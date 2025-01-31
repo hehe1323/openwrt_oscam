@@ -1,0 +1,5 @@
+--- a/reader-common.c
++++ b/reader-common.c
+@@ -53,7 +53,7 @@
+-   reader->csystem_active = false;
++   rdr->csystem_active = false; // 修正变量名错误
