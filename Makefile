@@ -5,7 +5,11 @@
 # See /LICENSE for more information.
 #
 TARGET_CFLAGS += -Wno-error=shadow -Wno-error=unused-function
-
+TARGET_CFLAGS += \
+    -Wno-shadow \
+    -Wno-error=unused-parameter \
+    -D_XOPEN_SOURCE=600 \
+    -include stdint.h
 include $(TOPDIR)/rules.mk
 
 PKG_NAME := oscam
