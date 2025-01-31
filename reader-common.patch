@@ -1,0 +1,35 @@
+--- a/reader-common.c
++++ b/reader-common.c
+@@ -25,7 +25,7 @@
+ 
+ // ====================== 核心函数修改 ======================
+ 
+-int process_ecm_request(struct s_reader *reader, ECM_REQUEST *ecm) {
++int process_ecm_request(struct s_reader *main_reader, ECM_REQUEST *ecm) {
+     // 添加StreamGuard处理逻辑
+ #ifdef MODULE_STREAMGUARD
+     if (streamguard_check_ecm(ecm->ecm)) {
+@@ -49,7 +49,7 @@
+ 
+ // ====================== 函数参数重命名 ======================
+ 
+-static void reader_nullcard(struct s_reader *reader) {
++static void reader_nullcard(struct s_reader *rdr) {
+     // 原函数逻辑保持不变
+ }
+ 
+@@ -63,7 +63,7 @@
+ 
+ // ====================== 函数声明提升 ======================
+ 
+-static int32_t reader_activate_card(struct s_reader *reader, ATR *atr, uint16_t deprecated);
++static int32_t reader_activate_card(struct s_reader *rdr, ATR *atr, uint16_t deprecated);
+ 
+ // ====================== 代码结构修复 ======================
+ 
+@@ -586,4 +586,5 @@
+     // 原有代码逻辑
+     
+     return OK;
++} // 补全缺失的括号
+ }
