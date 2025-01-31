@@ -7,13 +7,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME := oscam
-PKG_REV := 05cbeda
+PKG_REV := 9d1811d
 PKG_VERSION := r11704_$(PKG_REV)
 PKG_RELEASE := 1
 
 PKG_SOURCE_PROTO:= git
 PKG_SOURCE_VERSION := $(PKG_REV)
-PKG_SOURCE_URL := https://github.com/hehe1323/oscam
+PKG_SOURCE_URL := https://github.com/hehe1323/oscam.git
 
 PKG_LICENSE := GPL-3.0
 PKG_LICENSE_FILE := COPYING
@@ -30,7 +30,7 @@ define Package/oscam
   SECTION := net
   CATEGORY := Network
   TITLE := Open Source Conditional Access Modul
-  URL := http://www.streamboard.tv/oscam
+  URL := https://git.streamboard.tv/common/oscam
   DEPENDS := +usbutils +kmod-usb-serial +kmod-usb-serial-ch341 +kmod-usb-serial-pl2303 +kmod-usb-serial-ftdi \
    +OSCAM_USE_LIBCRYPTO:libopenssl \
    +OSCAM_USE_LIBUSB:libusb-1.0 \
