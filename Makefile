@@ -13,13 +13,13 @@ TARGET_CFLAGS += \
 include $(TOPDIR)/rules.mk
 
 PKG_NAME := oscam
-PKG_REV := 9d1811d
+PKG_REV := 893c90b
 PKG_VERSION := r11704_$(PKG_REV)
 PKG_RELEASE := 1
 
 PKG_SOURCE_PROTO:= git
 PKG_SOURCE_VERSION := $(PKG_REV)
-PKG_SOURCE_URL := https://github.com/hehe1323/oscam.git
+PKG_SOURCE_URL := https://github.com/hehe1323/oscam
 
 PKG_LICENSE := GPL-3.0
 PKG_LICENSE_FILE := COPYING
