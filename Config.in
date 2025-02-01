@@ -1,0 +1,18 @@
+menu "OSCam Configuration"
+	depends on PACKAGE_oscam
+
+config OSCAM_IPV6SUPPORT
+	bool "Enable IPv6 support"
+	default n
+
+config OSCAM_MODULE_CAMD35
+	bool "Enable CAMD 3.5 protocol"
+	default y
+
+config OSCAM_USE_PCSC
+	bool "Enable PC/SC support"
+	select PACKAGE_libpcsc
+	default y
+
+# 更多配置项...
+endmenu
