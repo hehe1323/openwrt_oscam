@@ -6,7 +6,7 @@
 
 在 make menuconfig 中选择：
 
-复制
+
 Network → Web Servers/Proxies → oscam
 编译后通过 opkg 安装，配置路径：
 
