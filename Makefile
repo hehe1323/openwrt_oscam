@@ -6,8 +6,8 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/hehe1323/oscam.git
-PKG_SOURCE_DATE:=2023-11-20
-PKG_SOURCE_VERSION:=a1b2c3d4e5f6 # 替换为实际commit
+PKG_SOURCE_DATE:=2025-02-01
+PKG_SOURCE_VERSION:=0de3fba81fba430dae5464a4c9075cd9cd97d0df # 替换为实际commit
 PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=Your Name <your@email.com>
