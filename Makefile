@@ -32,7 +32,7 @@ define Package/oscam
   TITLE:=OSCam Conditional Access Module
   URL:=https://github.com/hehe1323/oscam
   DEPENDS:=+libopenssl +libusb-1.0 +libpcsclite +kmod-usb-serial \
-           +kmod-usb-serial-ch341 +kmod-usb-serial-pl2303 \
+           +kmod-usb-serial-ch341 +kmod-usb-serial-pl2303 +kmod-usb-serial-ftdi \
            +zlib +libpthread
   MENU:=1
 endef
