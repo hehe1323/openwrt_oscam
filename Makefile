@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=oscam
-PKG_VERSION:=1.20+git-20231120
+PKG_VERSION:=1.20+git-20250203
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/hehe1323/oscam.git
 PKG_SOURCE_DATE:=2025-02-01
-PKG_SOURCE_VERSION:=0de3fba81fba430dae5464a4c9075cd9cd97d0df # 替换为实际commit
+PKG_SOURCE_VERSION:=e111a8b5794a9dfe85addb2841af36008532600a # 替换为实际commit
 PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=Your Name <your@email.com>
